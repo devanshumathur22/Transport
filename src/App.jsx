@@ -1,25 +1,29 @@
 import { Routes, Route } from "react-router-dom";
-import Navbar from "../src/Components/Navbar";
-import Footer from "../src/Components/Footer";
-import Slider from "../src/Pages/Slider";
-import Relocation from "../src/Pages/Relocation";
-import Features from "../src/Pages/Features";
-import Banner from "../src/Pages/Banner";
-import AboutUs from "../src/Pages/AboutUS";
-import Delivery from "../src/Pages/Delivery";
-import Map from "../src/Pages/Map"
-import Branches from "../src/Pages/Branches";
-import ContactUs from "../src/Pages/ContactUs"
-import Packing from "../src/Services/Packing";
-import Household from "../src/Services/Household"
-import Insurance from "../src/Services/Insurance"
-import Car from "../src/Services/Car"
-import Local from "../src/Services/Local"
-import Loading from "../src/Services/Loading"
-import Warehouse from "../src/Services/Warehouse"
-import Escort from "../src/Services/Escort"
-import Office from "../src/Services/ Office"
-import CallUs from "../src/Pages/CallUs";
+import Navbar from "./Components/Navbar";
+import Footer from "./Components/Footer";
+
+import Slider from "./Pages/Slider";
+import Relocation from "./Pages/Relocation";
+import Features from "./Pages/Features";
+import Banner from "./Pages/Banner";
+import AboutUs from "./Pages/AboutUS";
+import Delivery from "./Pages/Delivery";
+import Map from "./Pages/Map";
+import Branches from "./Pages/Branches";
+import ContactUs from "./Pages/ContactUs";
+import CallUs from "./Pages/CallUs";
+
+// Services
+import Packing from "./Services/Packing";
+import Household from "./Services/Household";
+import Insurance from "./Services/Insurance";
+import Car from "./Services/Car";
+import Local from "./Services/Local";
+import Loading from "./Services/Loading";
+import Warehouse from "./Services/Warehouse";
+import Escort from "./Services/Escort";
+import Office from "./Services/Office";
+
 export default function App() {
   return (
     <>
@@ -36,27 +40,27 @@ export default function App() {
               <Features />
               <Banner />
               <Delivery />
-              <Map/>           
+              <Map />
             </>
           }
         />
-        
-        <Route path="/about" element={<AboutUs />} />     
+
+        <Route path="/about" element={<AboutUs />} />
         <Route path="/branches" element={<Branches />} />
         <Route path="/contact" element={<ContactUs />} />
 
-        {/* services */}
-        <Route path="/Packing" element={<Packing  />}/>
-        <Route path="/Loading" element={<Loading  />}/>
-        <Route path="/Local" element={<Local/>}/>
-        <Route path="/Car" element={<Car />}/>
-        <Route path="/Warehouse" element={<Warehouse  />}/>
-        <Route path="/Office" element={<Office />}/>
-        <Route path="/Household" element={<Household  />}/>
-        <Route path="/Escort" element={<Escort />}/>
-        <Route path="/Insurance" element={<Insurance />}/>
-
+        {/* Services */}
+        <Route path="/packing" element={<Packing />} />
+        <Route path="/loading" element={<Loading />} />
+        <Route path="/local" element={<Local />} />
+        <Route path="/car" element={<Car />} />
+        <Route path="/warehouse" element={<Warehouse />} />
+        <Route path="/office" element={<Office />} />
+        <Route path="/household" element={<Household />} />
+        <Route path="/escort" element={<Escort />} />
+        <Route path="/insurance" element={<Insurance />} />
       </Routes>
+
       <Footer />
     </>
   );
