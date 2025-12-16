@@ -2,7 +2,6 @@ import { Routes, Route } from "react-router-dom";
 import Navbar from "../src/Components/Navbar";
 import Footer from "../src/Components/Footer";
 import Slider from "../src/Pages/Slider";
-import Callus from "../src/Pages/CallUs"; 
 import Relocation from "../src/Pages/Relocation";
 import Features from "../src/Pages/Features";
 import Banner from "../src/Pages/Banner";
@@ -20,6 +19,7 @@ import Loading from "../src/Services/Loading"
 import Warehouse from "../src/Services/Warehouse"
 import Escort from "../src/Services/Escort"
 import Office from "../src/Services/ Office"
+import CallUs from "../src/Pages/CallUs";
 export default function App() {
   return (
     <>
@@ -31,7 +31,7 @@ export default function App() {
           element={
             <>
               <Slider />
-              <Callus />
+              <CallUs />
               <Relocation />
               <Features />
               <Banner />
