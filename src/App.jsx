@@ -2,7 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import Navbar from "../src/Components/Navbar";
 import Footer from "../src/Components/Footer";
 import Slider from "../src/Pages/Slider";
-import Callus from "../src/Pages/Callus"; 
+import Callus from "../src/Pages/CallUs"; 
 import Relocation from "../src/Pages/Relocation";
 import Features from "../src/Pages/Features";
 import Banner from "../src/Pages/Banner";
@@ -36,18 +36,16 @@ export default function App() {
               <Features />
               <Banner />
               <Delivery />
-              <Map/>
-             
-            
+              <Map/>           
             </>
           }
         />
-
         
-        <Route path="/about" element={<AboutUs />} />
-        {/* <Route path="/services" element={<Services />} /> */}
+        <Route path="/about" element={<AboutUs />} />     
         <Route path="/branches" element={<Branches />} />
         <Route path="/contact" element={<ContactUs />} />
+
+        {/* services */}
         <Route path="/Packing" element={<Packing  />}/>
         <Route path="/Loading" element={<Loading  />}/>
         <Route path="/Local" element={<Local/>}/>
@@ -58,10 +56,7 @@ export default function App() {
         <Route path="/Escort" element={<Escort />}/>
         <Route path="/Insurance" element={<Insurance />}/>
 
-
-
       </Routes>
-
       <Footer />
     </>
   );
