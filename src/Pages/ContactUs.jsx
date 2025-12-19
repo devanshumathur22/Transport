@@ -10,148 +10,172 @@ import {
 export default function ContactUs() {
   return (
     <>
-    <section
-  className="h-[60vh] bg-fixed bg-center bg-cover flex items-center justify-center"
-  style={{
-    backgroundImage:
-      "url('https://images.unsplash.com/photo-1492724441997-5dc865305da7')",}}>
-  <h1 className="text-white text-4xl md:text-6xl font-bold tracking-wider">
-    CONTACT US
-  </h1>
-</section>
-    
-      <section className="max-w-7xl mx-auto px-6 py-20 grid grid-cols-1 lg:grid-cols-3 gap-16">            
+      {/* HERO */}
+      <section
+        className="h-[55vh] bg-center bg-cover flex items-center justify-center relative"
+        style={{
+          backgroundImage:
+            "url('https://images.unsplash.com/photo-1492724441997-5dc865305da7')",
+        }}
+      >
+        <div className="absolute inset-0 bg-black/60"></div>
+        <h1 className="relative text-white text-4xl md:text-6xl font-bold tracking-wider">
+          CONTACT US
+        </h1>
+      </section>
+
+      {/* CONTACT DETAILS */}
+      <section className="max-w-7xl mx-auto px-6 py-20 grid grid-cols-1 lg:grid-cols-3 gap-16">
         <div className="lg:col-span-2">
-          <h2 className="text-3xl font-bold mb-3">CONTACT DETAILS</h2>
-          <div className="w-16 h-2 bg-sky-500 mb-6"></div>
-          <p className="text-gray-600 mb-10 max-w-2xl">
-            If you have any questions about what we offer for consumers or for
-            business, you can always email us or call us via the below details.
-            We’ll reply within 24 hours.
+          <h2 className="text-3xl font-bold mb-3">Contact Details</h2>
+          <div className="w-16 h-1.5 bg-sky-500 mb-6"></div>
+
+          <p className="text-gray-600 mb-12 max-w-2xl leading-relaxed">
+            Get in touch with Prajapati Transport Service for reliable packing,
+            moving, and transportation solutions. Our team is always ready to
+            assist you with your relocation requirements.
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10">   
 
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            {/* ADDRESS */}
             <div className="flex gap-4">
-              <MapPin className="text-sky-500" />
+              <MapPin className="text-sky-500 mt-1" />
               <div>
-                <h4 className="font-semibold text-lg mb-1">Visit our office</h4>
-                <p className="text-gray-600">
-                  New Janganpura, Ramkrishna Nagar, Patna 800027, India
-                </p>
-              </div>
-            </div>
-          
-            <div className="flex gap-4">
-              <Phone className="text-sky-500" />
-              <div>
-                <h4 className="font-semibold text-lg mb-1">Call us on</h4>
-                <p className="text-gray-600">
-                  Office: +91 9471458067 & +91 8877321572 <br />
-                  Customer Care: +91 9471458066
+                <h4 className="font-semibold text-lg mb-1">
+                  Visit Our Office
+                </h4>
+                <p className="text-gray-600 leading-relaxed">
+                  Outer Ring Road, Near Sirat Nagar,<br />
+                  Neuri Vikas, Ranchi – 835217, Jharkhand, India
                 </p>
               </div>
             </div>
 
+            {/* PHONE */}
             <div className="flex gap-4">
-              <Mail className="text-sky-500" />
+              <Phone className="text-sky-500 mt-1" />
               <div>
-                <h4 className="font-semibold text-lg mb-1">Mail us at</h4>
+                <h4 className="font-semibold text-lg mb-1">
+                  Call Us
+                </h4>
                 <p className="text-gray-600">
-                  mahipackersandmovers.in@gmail.com
+                  Office: +91 9471458067 <br />
+                  Support: +91 8877321572
                 </p>
               </div>
             </div>
-            
+
+            {/* EMAIL */}
             <div className="flex gap-4">
-              <Share2 className="text-sky-500" />
+              <Mail className="text-sky-500 mt-1" />
               <div>
-                <h4 className="font-semibold text-lg mb-2">We are social</h4>
+                <h4 className="font-semibold text-lg mb-1">
+                  Email Us
+                </h4>
+                <p className="text-gray-600">
+                  prajapatitransportservice@gmail.com
+                </p>
+              </div>
+            </div>
+
+            {/* SOCIAL */}
+            <div className="flex gap-4">
+              <Share2 className="text-sky-500 mt-1" />
+              <div>
+                <h4 className="font-semibold text-lg mb-3">
+                  Connect With Us
+                </h4>
                 <div className="flex gap-4">
-                  <span className="w-10 h-10 border rounded-full flex items-center justify-center cursor-pointer">
+                  <span className="w-10 h-10 border border-gray-300 rounded-full flex items-center justify-center cursor-pointer hover:bg-sky-500 hover:text-white transition">
                     <Facebook size={18} />
                   </span>
-                  <span className="w-10 h-10 border rounded-full flex items-center justify-center cursor-pointer">
+                  <span className="w-10 h-10 border border-gray-300 rounded-full flex items-center justify-center cursor-pointer hover:bg-sky-500 hover:text-white transition">
                     <Twitter size={18} />
                   </span>
-                  <span className="w-10 h-10 border rounded-full flex items-center justify-center cursor-pointer">
+                  <span className="w-10 h-10 border border-gray-300 rounded-full flex items-center justify-center cursor-pointer hover:bg-sky-500 hover:text-white transition">
                     G+
                   </span>
                 </div>
               </div>
             </div>
-
           </div>
         </div>
-      
-        <div className="border p-8">
-          <h3 className="text-2xl font-bold mb-3">WORKING HOURS</h3>
+
+        {/* WORKING HOURS */}
+        <div className="bg-white rounded-2xl shadow-sm border p-8 h-fit">
+          <h3 className="text-2xl font-bold mb-3">
+            Working Hours
+          </h3>
           <p className="text-gray-600 mb-6">
-            Pleasure and praising pain was born and will give you a complete
-            happiness.
+            We are available throughout the week to provide prompt and reliable
+            relocation support.
           </p>
 
-          <ul className="space-y-4 text-gray-700">
-            <li className="flex justify-between ">
-              <span>Monday</span>
-              <span>08:00 am – 18.00 pm</span>
+          <ul className="space-y-4 text-gray-700 text-sm">
+            <li className="flex justify-between">
+              <span>Monday – Friday</span>
+              <span>08:00 AM – 08:00 PM</span>
             </li>
             <li className="flex justify-between">
-              <span>Tuesday</span>
-              <span>08:00 am – 18.00 pm</span>
+              <span>Saturday</span>
+              <span>09:00 AM – 07:00 PM</span>
             </li>
-            <li className="flex justify-between ">
-              <span>Wednesday</span>
-              <span>08:00 am – 18.00 pm</span>
+            <li className="flex justify-between">
+              <span>Sunday</span>
+              <span>10:00 AM – 06:00 PM</span>
             </li>
-            <li className="flex justify-between ">
-              <span>Thurs & Friday</span>
-              <span>08:00 am – 18.00 pm</span>
-            </li>
-            <li className="flex justify-between ">
-              <span>Sat & Sunday</span>
-              <span>10:00 am – 18.00 pm</span>
+            <li className="flex justify-between font-semibold">
+              <span>Emergency Support</span>
+              <span className="text-sky-500">Available</span>
             </li>
           </ul>
         </div>
       </section>
-    
-      <section className="bg-gray-50 py-20">
-        <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-3xl font-bold text-center mb-3">
-            LEAVE YOUR MESSAGE
-          </h2>
-          <div className="w-16 h-2 bg-sky-500 mx-auto mb-6"></div>
 
-          <p className="text-center text-gray-600 max-w-3xl mx-auto mb-12">
-            If you have any questions about the services we provide simply use
-            the form below. We try and respond to all queries within 24 hours.
+      {/* CONTACT FORM */}
+      <section className="bg-gray-50 py-24">
+        <div className="max-w-4xl mx-auto px-6">
+          <h2 className="text-3xl font-bold text-center mb-3">
+            Leave Your Message
+          </h2>
+          <div className="w-16 h-1.5 bg-sky-500 mx-auto mb-6"></div>
+
+          <p className="text-center text-gray-600 max-w-2xl mx-auto mb-14">
+            Have questions or need a quote? Fill out the form below and our team
+            will get back to you as soon as possible.
           </p>
 
-          <form className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <form className="bg-white rounded-2xl shadow-sm border p-10 grid grid-cols-1 md:grid-cols-2 gap-8">
             <input
               type="text"
               placeholder="Your Name*"
-              className="border p-4"/>
-            <textarea
-              placeholder="Your Message..."
-              rows="6"
-              className="border p-4 md:row-span-3">                
-              </textarea>
+              className="border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-sky-400"
+            />
 
             <input
               type="email"
               placeholder="Email Address*"
-              className="border p-4"/>
+              className="border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-sky-400"
+            />
+
             <input
               type="text"
-              placeholder="Phone"
-              className="border p-4"/>
+              placeholder="Phone Number"
+              className="border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-sky-400"
+            />
 
-            <div className="md:col-span-2 text-center mt-6">
+            <textarea
+              placeholder="Your Message..."
+              rows="5"
+              className="border border-gray-300 rounded-md px-4 py-3 md:col-span-2 focus:outline-none focus:ring-2 focus:ring-sky-400"
+            />
+
+            <div className="md:col-span-2 text-center mt-4">
               <button
                 type="submit"
-                className="bg-sky-500 text-white px-12 py-3 font-semibold hover:bg-sky-600">
-                Submit
+                className="bg-sky-500 hover:bg-sky-600 text-white px-14 py-3 rounded-md font-semibold transition-colors"
+              >
+                Submit Message
               </button>
             </div>
           </form>

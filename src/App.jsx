@@ -12,6 +12,11 @@ import Map from "./Pages/Map";
 import Branches from "./Pages/Branches";
 import ContactUs from "./Pages/ContactUs";
 import CallUs from "./Pages/CallUs";
+import Cta from "../src/Components/Cta"
+import Reviews from "./Pages/Review";
+import Booking from "./Components/Booking";
+import GetQuote from "./Pages/GetQuote";
+import Gallery from "./Components/Gallery";
 
 // Services
 import Packing from "./Services/Packing";
@@ -24,10 +29,12 @@ import Warehouse from "./Services/Warehouse";
 import Escort from "./Services/Escort";
 import Office from "./Services/Office";
 
+
 export default function App() {
   return (
     <>
       <Navbar />
+      <Cta/>
 
       <Routes>
         <Route
@@ -37,6 +44,8 @@ export default function App() {
               <Slider />
               <CallUs />
               <Relocation />
+              <Reviews/>
+              {/* <Gallery/> */}
               <Features />
               <Banner />
               <Delivery />
@@ -48,6 +57,12 @@ export default function App() {
         <Route path="/about" element={<AboutUs />} />
         <Route path="/branches" element={<Branches />} />
         <Route path="/contact" element={<ContactUs />} />
+        <Route path="/booking" element={<Booking/>} />
+        <Route path="/get-quote" element={<GetQuote />} />
+        <Route path="/get-quote" element={<GetQuote />} />
+        <Route path="/gallery" element={< Gallery/>} />
+
+
 
         {/* Services */}
         <Route path="/packing" element={<Packing />} />
