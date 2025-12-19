@@ -1,22 +1,22 @@
 import React, { useState } from "react";
+// import img from ""
 
 export default function GalleryPage() {
   const [activeImg, setActiveImg] = useState(null);
 
-  // ⚠️ Images MUST be inside: public/images/
   const images = [
     "/public/1.jpg",
-    "/public/2.jpg",
-    "/public/3.jpg",
-    "/public/4.jpg",
-    "/public/5.jpg",
-    "/public/6.jpg",
-    "/public/7.jpg",
-    "/public/9.jpg",
     "/public/10.jpg",
     "/public/11.jpg",
     "/public/12.jpg",
     "/public/14.jpg",
+    "/public/2.jpg",
+    "/public/3.jpg",
+    "/public/4.jpg",
+    "/public/5.jpg",
+    "/public6.jpg",
+    "/public/7.jpg",
+    "/public/9.jpg",
   ];
 
   return (
@@ -30,32 +30,31 @@ export default function GalleryPage() {
           Real Transport • Real Packers • All India Service
         </p>
 
-        {/* ✅ SAME SIZE GRID */}
+        {/* 🔥 EQUAL SIZE GRID */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {images.map((img, index) => (
             <div
               key={index}
               onClick={() => setActiveImg(img)}
-              className="cursor-pointer overflow-hidden rounded-2xl shadow-lg
+              className="group cursor-pointer overflow-hidden rounded-2xl shadow-lg
                          transform transition-all duration-300
                          hover:-translate-y-1 hover:shadow-2xl"
             >
               {/* FIXED HEIGHT */}
-              <div className="w-full h-64 overflow-hidden bg-gray-200">
+              <div className="w-full h-64 overflow-hidden">
                 <img
                   src={img}
                   alt="Prajapati Transport Service"
-                  loading="lazy"
                   className="w-full h-full object-cover
                              transition-transform duration-500
-                             hover:scale-110"
+                             group-hover:scale-110"
                 />
               </div>
             </div>
           ))}
         </div>
 
-        {/* ✅ LIGHTBOX */}
+        {/* LIGHTBOX */}
         {activeImg && (
           <div
             className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center px-4"
@@ -70,7 +69,7 @@ export default function GalleryPage() {
         )}
       </div>
 
-      {/* ✅ INLINE ANIMATION (NO EXTRA FILE) */}
+      {/* ANIMATION */}
       <style>{`
         @keyframes zoomIn {
           from {
